@@ -32,6 +32,13 @@
 </tr>
 </table>
 
+不方便扫码的，点链接也能进。给仓库点一颗 ⭐ 就算投币，Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
+
+<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-972220164-6171F0?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ 交流群 972220164"></a>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioGame%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-FFB86B?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioGame 开发者社区"></a>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a>
+
 <div align="center">
 
 <br>
@@ -229,20 +236,6 @@ ABI 从 `native-abi.json` 生成，Wire 协议从 `hello-wire-v1.json` 生成。
 </table>
 
 <br>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-join-dark.svg">
-  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-join.svg" height="56" alt="JOIN THE PARTY">
-</picture>
-
-给仓库点一颗 ⭐ 就算投币。Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
-
-想直接聊，二维码在页首。不方便扫的，点这几个链接也能进：
-
-<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-972220164-6171F0?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ 交流群 972220164"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioGame%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-FFB86B?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioGame 开发者社区"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a>
 
 <div align="center">
 
