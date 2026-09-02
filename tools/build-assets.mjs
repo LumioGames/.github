@@ -351,6 +351,12 @@ const ICONS = {
     '...###..........', '..#x##..........', '.#x#.##.........', '#x#...#.........',
     '.#..............', '................', '................', '................',
   ],
+  brush: [
+    '...........###..', '..........#oo#..', '.........#oo#...', '........#oo#....',
+    '.......#oo#.....', '......#oo#......', '.....######.....', '....#oooo#......',
+    '...#xxxx#.......', '..#xxxxx#.......', '..#xxxx#........', '.#xxxx#.........',
+    '.#xx##..........', '..##....xx......', '.......xxxx.....', '........xx......',
+  ],
 };
 function icon(name, tone) {
   const W = 120, H = 128, size = 88, x = 16, y = 12, px = 4, off = (size - 16 * px) / 2;
@@ -378,6 +384,56 @@ ${defs(id, W, H)}
   <text x="176" y="130" font-family="${FONT_ZH}" font-size="24" fill="${C.muted}">觉得有用就点个 ★。Issue 和 PR 都欢迎。</text>
   ${idle(cubes, 6, 5, 0)}
   ${idle(gtSprite(SPRITES.gem, 1130, 120, 9, C.rose), 7, 4, 1.5)}
+  <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="${C.line}"/>
+</g>
+</svg>`;
+}
+
+// ═══════════════════════ 核心优势横幅（.gt-banner 外壳 + 三个职能站点串成一条管线）═══════════════════════
+// 文案按 cui 口述定稿：主标是「一个人就是一个团队」，副标讲 AI Native 管线，下面按技术 / 策划 / 美术三个职能分。
+function pipeline() {
+  const W = 1200, H = 340, id = 'p';
+  const eyebrow = pixText('SOLO PLAYER / FULL PARTY', 72, 44, 2.4, C.primaryD);
+  const stations = [
+    { key: 'tech', sprite: 'gear', tone: C.mint, en: 'TECH', zh: '技术', cx: 300 },
+    { key: 'design', sprite: 'scroll', tone: C.amber, en: 'DESIGN', zh: '策划', cx: 600 },
+    { key: 'art', sprite: 'brush', tone: C.rose, en: 'ART', zh: '美术', cx: 900, locked: true },
+  ];
+  const size = 80, top = 176, px = 4, off = (size - 16 * px) / 2;
+  let body = '';
+  stations.forEach((st, i) => {
+    const x = st.cx - size / 2;
+    const block = iconBlock(x, top, size, st.tone, sprite(ICONS[st.sprite], x + off, top + off, px), 'p-' + st.key);
+    const en = pixText(st.en, st.cx - pixWidth(st.en, 2.4) / 2, 272, 2.4, C.title);
+    const label = `<text x="${st.cx}" y="${314}" text-anchor="middle" font-family="${FONT_ZH}" font-size="17" font-weight="700" fill="${C.muted}">${st.zh}</text>`;
+    let g = idle(block, 6, 4.4 + i * 0.4, i * 1.1) + en.path + label;
+    if (st.locked) {
+      const lk = pixText('LOCKED', x + size + 14, top + 10, 2, mix(C.amber, 70, '#000000'));
+      g = `<g opacity=".6">${g}</g>${lk.path}`;
+    }
+    body += g;
+    // 站点之间的管线：像素点阵 + 一个 > 箭头
+    if (i < stations.length - 1) {
+      const from = st.cx + size / 2 + 18, to = stations[i + 1].cx - size / 2 - 18, cy = top + size / 2;
+      let dots = '';
+      for (let dx = from; dx < to; dx += 14) dots += `<rect x="${dx}" y="${cy - 2}" width="5" height="5" rx="1" fill="${C.primary}" fill-opacity=".45"/>`;
+      const arrow = pixText('>', (from + to) / 2 - pixWidth('>', 3) / 2, cy - 10, 3, C.primaryD);
+      body += dots + arrow.path;
+    }
+  });
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="开源才是最大的 UGC，一个人就是一个团队。一条完整的 AI Native 游戏研发生产管线，技术 / 策划 / 美术一个人带着 Agent 就能跑完">
+${defs(id, W, H)}
+<g clip-path="url(#${id}-round)">
+  <rect width="${W}" height="${H}" fill="url(#${id}-banner)"/>
+  <rect width="${W}" height="${H}" fill="url(#${id}-grid)"/>
+  <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mR)"/>
+  ${eyebrow.path}
+  <text x="72" y="112" font-family="${FONT_ZH}" font-size="42" font-weight="700" fill="${C.ink}">开源才是最大的 UGC，一个人就是一个团队。</text>
+  <text x="72" y="148" font-family="${FONT_ZH}" font-size="20" fill="${C.muted}">一条完整的 AI Native 游戏研发生产管线。技术、美术、策划三个职能，一个人带着 Agent 就能跑完。</text>
+  ${body}
+  ${idle(isoCube(1110, 150, 20, C.primary), 7, 4.6, 0.8)}
+  ${idle(gtSprite(SPRITES.gem, 1056, 262, 8, C.rose), 6, 3.8, 1.9)}
+  ${brandMark(W - 36 - 48 - 100, 30, 48, .9)}
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="${C.line}"/>
 </g>
 </svg>`;
@@ -454,6 +510,11 @@ const files = {
   'footer.svg': footer(),
   'sec-why.svg': section('为什么做', 'WHY WE BUILD', C.amber, false),
   'sec-why-dark.svg': section('为什么做', 'WHY WE BUILD', C.amber, true),
+  'sec-special-moves.svg': section('核心优势', 'SPECIAL MOVES', C.rose, false),
+  'sec-special-moves-dark.svg': section('核心优势', 'SPECIAL MOVES', C.rose, true),
+  'pipeline.svg': pipeline(),
+  'sec-out-of-bounds.svg': section('明确不做', 'OUT OF BOUNDS', C.amber, false),
+  'sec-out-of-bounds-dark.svg': section('明确不做', 'OUT OF BOUNDS', C.amber, true),
   'sec-next.svg': section('下一步', 'NEXT STAGE', C.mint, false),
   'sec-next-dark.svg': section('下一步', 'NEXT STAGE', C.mint, true),
   'sec-join-us.svg': section('加入我们', 'JOIN US', C.primaryD, false),
@@ -477,6 +538,7 @@ const files = {
   'icon-sword.svg': icon('sword', C.primary),
   'icon-search.svg': icon('search', C.amber),
   'icon-levelup.svg': icon('levelup', C.mint),
+  'icon-art.svg': icon('brush', C.rose),
 };
 for (const [name, svg] of Object.entries(files)) fs.writeFileSync(path.join(OUT, name), svg.trim() + '\n');
 console.log(`wrote ${Object.keys(files).length} files → ${path.relative(ROOT, OUT)}`);

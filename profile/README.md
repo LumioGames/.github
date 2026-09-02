@@ -67,57 +67,65 @@
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="56" alt="">
+
+**商业引擎的专用服务器太重**
+
+每家引擎各带一套专用服务器，历史包袱重。调试、编译、测试，对 Agent 都不友好。
+
+</td>
+<td width="33%" valign="top" align="center">
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-cube.svg" width="56" alt="">
 
-**画面与逻辑分离**
+**逻辑绑死在引擎上**
 
-逻辑不依赖任何引擎。
+调试、Debug、让 Agent 上手，都得先起一个庞大的引擎。多开和服务器机器人压测更难。
 
 </td>
 <td width="33%" valign="top" align="center">
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-workflow.svg" width="56" alt="">
 
-**迁得走**
+**三拨人三套工作流**
 
-这套框架可以迁移到任何商业引擎上。
-
-</td>
-<td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-game.svg" width="56" alt="">
-
-**开源，长期维护**
-
-每个大版本都发布一个游戏，游戏的复杂度逐渐变高。
-
-</td>
-</tr>
-<tr>
-<td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="56" alt="">
-
-**DS 服务器**
-
-解决商业引擎在专用服务器架构上的痛点。
-
-</td>
-<td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-sword.svg" width="56" alt="">
-
-**100 人同房**
-
-覆盖 MOBA、MMO，甚至类吃鸡这样的游戏类型。
-
-</td>
-<td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-heart.svg" width="56" alt="">
-
-**一起走**
-
-希望有更多的人加入这段开源旅程。
+技术、美术、策划各维护各的知识库和工作流，没有统一规划，策划工作割裂。
 
 </td>
 </tr>
 </table>
+
+希望有更多的人加入这段开源旅程。
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-special-moves-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-special-moves.svg" height="56" alt="核心优势 · SPECIAL MOVES">
+</picture>
+
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/pipeline.svg" width="100%" alt="开源才是最大的 UGC，一个人就是一个团队。完整的 AI Native 游戏研发生产管线 · 技术 / 策划 / 美术">
+
+| <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="28" align="absmiddle" alt=""> 技术 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-spec.svg" width="28" align="absmiddle" alt=""> 策划 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-art.svg" width="28" align="absmiddle" alt=""> 美术 |
+| :-- | :-- | :-- |
+| **客户端 + 服务器 + 游戏，完整开源的解决方案** | **给 Agent 用的配置工作流** | **美术开发工作流** 🔒 |
+| **画面与逻辑分离** | **网页即工具** | |
+| **不绑定引擎，迁得走** | | |
+| **Rust + C# 的 DS 服务器，100 人同房** | | |
+| **ECS + GAS，先进的游戏设计架构** | | |
+| **体素世界支持 UGC 和 AGC，给场景设计带来无穷的想象力** | | |
+| **长期维护** | | |
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-out-of-bounds-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-out-of-bounds.svg" height="56" alt="明确不做 · OUT OF BOUNDS">
+</picture>
+
+要可插拔任何游戏引擎，这四层就明确不碰。交给商业引擎或 Godot 这样的开源引擎。
+
+| 资源管理层 | 资源转换器 | 渲染层 | 物理层 |
+| :--: | :--: | :--: | :--: |
+| 🚫 不做 | 🚫 不做 | 🚫 不做 | 🚫 不做 |
 
 <br>
 
