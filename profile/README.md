@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏 · PRESS START"></a>
+<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg?v=3" width="100%" alt="LUMIO GAMES · Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏 · PRESS START"></a>
 
 </div>
 
