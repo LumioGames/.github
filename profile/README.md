@@ -15,29 +15,24 @@
 <tr>
 <td width="25%" align="center" valign="top">
 <a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-qq.svg" width="220" alt="QQ 交流群 LumioGames，群号 972220164"></a><br>
-<b>QQ 交流群</b><br><sub>群号 972220164 · 什么都能聊</sub>
+<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-972220164-6171F0?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ 交流群 972220164"></a><br><sub>什么都能聊</sub>
 </td>
 <td width="25%" align="center" valign="top">
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-game.svg" width="220" alt="飞书话题群 · LumioGame 开发者社区"></a><br>
-<b>LumioGame 开发者社区</b><br><sub>飞书话题群 · 玩法、内容、发布</sub>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioGame%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-FFB86B?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioGame 开发者社区"></a><br><sub>飞书话题群 · 玩法、内容、发布</sub>
 </td>
 <td width="25%" align="center" valign="top">
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-engine.svg" width="220" alt="飞书话题群 · LumioEngine 开发者社区"></a><br>
-<b>LumioEngine 开发者社区</b><br><sub>飞书话题群 · Rust / C# 引擎层</sub>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a><br><sub>飞书话题群 · Rust / C# 引擎层</sub>
 </td>
 <td width="25%" align="center" valign="top">
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-workflow.svg" width="220" alt="飞书话题群 · Workflow 开发者社区"></a><br>
-<b>Workflow 开发者社区</b><br><sub>飞书话题群 · Agent 与项目管理</sub>
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a><br><sub>飞书话题群 · Agent 与项目管理</sub>
 </td>
 </tr>
 </table>
 
-不方便扫码的，点链接也能进。给仓库点一颗 ⭐ 就算投币，Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
-
-<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-972220164-6171F0?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ 交流群 972220164"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioGame%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-FFB86B?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioGame 开发者社区"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a>
-<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a>
+不方便扫码的，点徽章也能进。给仓库点一颗 ⭐ 就算投币，Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider-dark.svg">
