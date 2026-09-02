@@ -56,6 +56,48 @@
 <br>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-why-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-why.svg" height="56" alt="为什么做 · WHY WE BUILD">
+</picture>
+
+**我要每天烧一百亿个 Token，开源一套百人在线的游戏引擎。** 现在它还只是一个 Hello World 的版本。
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**为什么做**
+
+我想从头搭一套真能让 AI 顺手开发的游戏底层。现成引擎很多，帮大家省了无数麻烦，但我想重新立一个规矩，游戏逻辑怎么描述、怎么测、最后交给什么画面去渲染。
+
+规则和画面劈开。服务器只管玩家放了一颗炸弹、几秒后炸、炸到了谁，怎么画那团火是客户端的事。逻辑能在没画面的环境里跑，AI 才能直接接手去压测、跑机器人、做校验。以后画面换 Unity、换 Godot，服务器这头的规则不用动。
+
+AI 写代码快，没人盯着边界，项目很快就变成一堆没人敢碰的烂摊子。所以需求、任务、验收都要留底，每一次改动都看得见。
+
+这套东西会一直朝开源免费做下去，给不太懂引擎但手痒想做游戏的人，留一道好进的门。
+
+</td>
+<td width="50%" valign="top">
+
+**凭什么能做**
+
+做了十年游戏引擎，这次算扎回老本行。
+
+桌面端应用 BestCodex 的 Windows 版已经上架微软商店。Workflow 这套 AI 原生的游戏工作流已经进生产，后台开通了三十七个项目。
+
+第一声 Hello World 已经砸实。一百个机器人挤进同一个服务器拼命发消息，每秒转发将近一万条，一条没丢。那台服务器是 Rust 写的，十六核的机器只吃了一个核，内存没过六十兆。
+
+玩法和热更用 C#，服务器用 Rust，都是用顺手了的东西。
+
+**下一关**是第一个 Hello World 游戏，暂定叫《疯狂炸弹人》，先做网页联机版，目标只有一个，让一百个人同时挤进一个房间。
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-stage-select-dark.svg">
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-stage-select.svg" height="56" alt="STAGE SELECT">
 </picture>

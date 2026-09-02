@@ -452,6 +452,8 @@ const files = {
   'sec-find-party-dark.svg': section('找组织', 'FIND YOUR PARTY', C.rose, true),
   'hero.svg': hero(),
   'footer.svg': footer(),
+  'sec-why.svg': section('为什么做', 'WHY WE BUILD', C.amber, false),
+  'sec-why-dark.svg': section('为什么做', 'WHY WE BUILD', C.amber, true),
   'sec-stage-select.svg': section('主线', 'STAGE SELECT', C.primary, false),
   'sec-stage-select-dark.svg': section('主线', 'STAGE SELECT', C.primary, true),
   'sec-tech-tree.svg': section('技能树', 'TECH TREE', C.mint, false),
