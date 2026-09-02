@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL GAMEPLAY FRAMEWORK + AGENT CREW · PRESS START"></a>
+<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏 · PRESS START"></a>
 
 </div>
 
@@ -36,20 +36,6 @@
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider-dark.svg">
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider.svg" width="100%" alt="">
 </picture>
-
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/manifesto.svg" width="100%" alt="Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏。Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。">
-
-<div align="center">
-
-<a href="https://github.com/LumioGames/LumioNativeCore"><img src="https://img.shields.io/badge/Rust-Native%20Kernel%20%2B%20Voxel-DEA584?style=for-the-badge&logo=rust&logoColor=1E2A3A" alt="Rust"></a>
-<a href="https://github.com/LumioGames/LumioGameRuntime"><img src="https://img.shields.io/badge/C%23-ECS%20Runtime%20%2B%20Hosts-7C8CFF?style=for-the-badge&logo=dotnet&logoColor=white" alt="C#"></a>
-<a href="https://agent-plugins.org/"><img src="https://img.shields.io/badge/Agent%20Plugins-1.0.0-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="Agent Plugins 1.0.0"></a>
-<a href="https://github.com/LumioGames/LumioAgentSpec"><img src="https://img.shields.io/badge/Claude%20Code-plugin-FFB86B?style=for-the-badge&logo=anthropic&logoColor=1E2A3A" alt="Claude Code plugin"></a>
-<a href="https://github.com/LumioGames/LumioGameEngine/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache--2.0%20%2F%20MIT-FF7EA6?style=for-the-badge" alt="License"></a>
-
-</div>
-
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-why-dark.svg">

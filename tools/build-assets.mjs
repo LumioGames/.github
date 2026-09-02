@@ -239,20 +239,17 @@ function hero() {
 
   const eyebrow = pixText('PLAYER 1 / VOXEL GAMEPLAY FRAMEWORK / AGENT CREW', 72, 78, 2.4, C.primaryD);
   const title = pixText('LUMIO GAMES', 72, 112, 8.6, C.title);
-  const press = pixText('> PRESS START', 72, 358, 3.4, mix(C.amber, 70, '#000000'), {
+  const press = pixText('> PRESS START', 72, 372, 3.4, mix(C.amber, 70, '#000000'), {
     inner: `<animate attributeName="opacity" values="1;1;.15;.15" keyTimes="0;.6;.61;1" dur="1.2s" repeatCount="indefinite"/>`,
   });
   const corner = pixText('GAMETECH / ORG PROFILE', W - 36 - pixWidth('GAMETECH / ORG PROFILE', 2.2), 30, 2.2, C.faint);
   const stage = pixText('STAGE CLEAR: HELLO WORLD', 72, H - 52, 2.4, C.faint);
 
-  const c1 = chip(72, 296, 'Rust', C.amber);
-  const c2 = chip(72 + c1.width + 12, 296, 'C#', C.primary);
-  const c3 = chip(72 + c1.width + c2.width + 24, 296, 'Agent Plugins 1.0.0', C.mint);
 
   let hearts = '';
   for (let i = 0; i < 3; i++) hearts += gtSprite(SPRITES.heart, 72 + i * 52, 30 + (i === 2 ? 0 : 0), 6, i < 3 ? C.rose : C.line, 2);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="LUMIO GAMES · AI Native 的通用体素 Gameplay 框架 × AI Agent 开发队伍 · PRESS START">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="LUMIO GAMES · Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏 · Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架 · PRESS START">
 ${defs(id, W, H)}
 <g clip-path="url(#${id}-round)">
   <rect width="${W}" height="${H}" fill="url(#${id}-panel)"/>
@@ -264,9 +261,10 @@ ${defs(id, W, H)}
   ${corner.path}
   ${eyebrow.path}
   ${title.path}
-  <text x="72" y="222" font-family="${FONT_ZH}" font-size="30" font-weight="700" fill="${C.ink}">用 Rust + C# 搭一套 AI Native 的体素 Gameplay 框架，</text>
-  <text x="72" y="262" font-family="${FONT_ZH}" font-size="30" font-weight="700" fill="${C.ink}">再让一支 AI Agent 队伍把游戏做出来。</text>
-  ${c1.svg}${c2.svg}${c3.svg}
+  <text x="72" y="222" font-family="${FONT_ZH}" font-size="32" font-weight="700" fill="${C.ink}">Idea + Lumio + Agent + 游戏引擎</text>
+  <text x="72" y="264" font-family="${FONT_ZH}" font-size="32" font-weight="700" fill="${C.ink}">= 一个<tspan fill="${mix(C.amber, 70, '#000000')}">完整的商业化游戏</tspan></text>
+  <text x="72" y="300" font-family="${FONT_ZH}" font-size="17" fill="${C.muted}">Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。</text>
+  <text x="72" y="326" font-family="${FONT_ZH}" font-size="17" fill="${C.muted}">渲染和物理交给你手里的引擎，玩法、服务器和 Agent 的规矩在这里。</text>
   ${press.path}
   ${stage.path}
 
