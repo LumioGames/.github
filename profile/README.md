@@ -1,6 +1,6 @@
 <div align="center">
 
-<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL ENGINE + AGENT CREW · PRESS START"></a>
+<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL GAMEPLAY FRAMEWORK + AGENT CREW · PRESS START"></a>
 
 </div>
 
@@ -37,11 +37,13 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider.svg" width="100%" alt="">
 </picture>
 
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/manifesto.svg" width="100%" alt="一套框架，加上你的 AI，加上你手里的引擎，做出一个完整的游戏。Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。">
+
 <div align="center">
 
-### 我们在做一个体素游戏引擎，代码都公开在这里。写代码的有人，也有 AI Agent，大家用同一套规矩干活。
+### 我们在做一套 AI Native 的通用体素 Gameplay 框架，代码都公开在这里。写代码的有人，也有 AI Agent，大家用同一套规矩干活。
 
-**A voxel game engine in Rust and C#. Humans and coding agents build it together, under the same rules.**
+**An AI-native voxel gameplay framework in Rust and C#. Bring your own engine and your own agents, ship a complete game.**
 
 <br>
 
@@ -60,7 +62,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-why.svg" height="56" alt="为什么做 · WHY WE BUILD">
 </picture>
 
-**每天 10B Token，开源一套百人在线的游戏引擎。**
+**每天 10B Token，开源一套百人在线的体素 Gameplay 框架。**
 
 我做了 10 年游戏引擎，熟悉游戏开发的每个流程、每一个模块。现在我要用 AI Native 的思想，重新梳理一套游戏开发的新规范。
 
@@ -211,7 +213,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-tech-tree.svg" height="56" alt="TECH TREE">
 </picture>
 
-引擎分四层，上层用下层，下层不知道上层是谁。箭头只往下指。
+框架分四层，上层用下层，下层不知道上层是谁。箭头只往下指。
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#7C8CFF','primaryTextColor':'#ffffff','primaryBorderColor':'#5B69D6','lineColor':'#7C8CFF'}}}%%
@@ -334,7 +336,7 @@ npx plugins add LumioGames/workflow-plugin
 
 **爱探索的工程师**
 
-有开源精神，会用 AI 干活。引擎、服务器、客户端、工具链，哪块顺手做哪块。
+有开源精神，会用 AI 干活。框架、服务器、客户端、工具链，哪块顺手做哪块。
 
 </td>
 <td width="33%" valign="top" align="center">

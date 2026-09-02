@@ -237,7 +237,7 @@ function hero() {
   let cubes = '';
   for (const [x, y, t] of stack) cubes += isoCube(x, y, S, t);
 
-  const eyebrow = pixText('PLAYER 1 / VOXEL ENGINE / AGENT CREW', 72, 78, 2.4, C.primaryD);
+  const eyebrow = pixText('PLAYER 1 / VOXEL GAMEPLAY FRAMEWORK / AGENT CREW', 72, 78, 2.4, C.primaryD);
   const title = pixText('LUMIO GAMES', 72, 112, 8.6, C.title);
   const press = pixText('> PRESS START', 72, 358, 3.4, mix(C.amber, 70, '#000000'), {
     inner: `<animate attributeName="opacity" values="1;1;.15;.15" keyTimes="0;.6;.61;1" dur="1.2s" repeatCount="indefinite"/>`,
@@ -252,7 +252,7 @@ function hero() {
   let hearts = '';
   for (let i = 0; i < 3; i++) hearts += gtSprite(SPRITES.heart, 72 + i * 52, 30 + (i === 2 ? 0 : 0), 6, i < 3 ? C.rose : C.line, 2);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="LUMIO GAMES · 体素游戏引擎 × AI Agent 开发队伍 · PRESS START">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="LUMIO GAMES · AI Native 的通用体素 Gameplay 框架 × AI Agent 开发队伍 · PRESS START">
 ${defs(id, W, H)}
 <g clip-path="url(#${id}-round)">
   <rect width="${W}" height="${H}" fill="url(#${id}-panel)"/>
@@ -264,7 +264,7 @@ ${defs(id, W, H)}
   ${corner.path}
   ${eyebrow.path}
   ${title.path}
-  <text x="72" y="222" font-family="${FONT_ZH}" font-size="30" font-weight="700" fill="${C.ink}">用 Rust + C# 造一台体素游戏引擎，</text>
+  <text x="72" y="222" font-family="${FONT_ZH}" font-size="30" font-weight="700" fill="${C.ink}">用 Rust + C# 搭一套 AI Native 的体素 Gameplay 框架，</text>
   <text x="72" y="262" font-family="${FONT_ZH}" font-size="30" font-weight="700" fill="${C.ink}">再让一支 AI Agent 队伍把游戏做出来。</text>
   ${c1.svg}${c2.svg}${c3.svg}
   ${press.path}
@@ -297,6 +297,12 @@ ${en1.path}
 
 // ═══════════════════════ 仓库图标（.gt-feat__icon 配方 + 16×16 像素画）═══════════════════════
 const ICONS = {
+  robot: [
+    '.......##.......', '.......##.......', '.....######.....', '..############..',
+    '..#oooooooooo#..', '..#o###oo###o#..', '..#o#xx#oo#xx#..', '..#o###oo###o#..',
+    '..#oooooooooo#..', '..#oo######oo#..', '..#oooooooooo#..', '..############..',
+    '....##....##....', '..###########...', '..#oo#....#oo#..', '..####....####..',
+  ],
   castle: [
     '................', '..#.#.#..#.#.#..', '..#####..#####..', '..#####..#####..',
     '..#ooo#..#ooo#..', '..#ooo####ooo#..', '..#ooo#..#ooo#..', '..#ooo#..#ooo#..',
@@ -439,6 +445,60 @@ ${defs(id, W, H)}
 </svg>`;
 }
 
+// ═══════════════════════ 宣言横幅（等式版式：框架 + AI + 商业引擎 = 完整的游戏）═══════════════════════
+function manifesto() {
+  const W = 1200, H = 420, id = 'm';
+  const eyebrow = pixText('AI NATIVE / VOXEL GAMEPLAY FRAMEWORK', 72, 44, 2.4, C.primaryD);
+  // 四个站点 + 三个运算符，居中排成一行等式
+  const terms = [
+    { key: 'fw', sprite: 'cube', tone: C.primary, en: 'FRAMEWORK', zh: 'Lumio 框架' },
+    { key: 'ai', sprite: 'robot', tone: C.mint, en: 'AI AGENT', zh: '你的 AI' },
+    { key: 'eng', sprite: 'gear', tone: C.rose, en: 'ANY ENGINE', zh: '商业引擎 / Godot' },
+    { key: 'game', sprite: 'castle', tone: C.amber, en: 'A GAME', zh: '一个完整的游戏', hot: true },
+  ];
+  const ops = ['+', '+', '='];
+  const size = 84, top = 244, px = 4, off = (size - 16 * px) / 2, gapOp = 96;
+  const rowW = terms.length * size + ops.length * gapOp;
+  let x = (W - rowW) / 2;
+  let body = '';
+  terms.forEach((t, i) => {
+    const cx = x + size / 2;
+    let block = iconBlock(x, top, size, t.tone, sprite(ICONS[t.sprite], x + off, top + off, px), 'm-' + t.key);
+    if (t.hot) {
+      // 结果项：外圈描一层 amber 光环，像素星星点两颗
+      block = `<rect x="${x - 8}" y="${top - 8}" width="${size + 16}" height="${size + 16}" rx="${size * 0.25 + 8}" fill="none" stroke="${C.amber}" stroke-width="3" stroke-dasharray="10 8"><animate attributeName="stroke-dashoffset" values="0;-36" dur="1.6s" repeatCount="indefinite"/></rect>` + block
+        + gtSprite(SPRITES.star, x + size + 6, top - 18, 5, C.amber, 1) + gtSprite(SPRITES.star, x - 26, top + size - 4, 4, C.rose, 1);
+    }
+    const en = pixText(t.en, cx - pixWidth(t.en, 2.2) / 2, top + size + 22, 2.2, t.hot ? mix(C.amber, 70, '#000000') : C.title);
+    const zh = `<text x="${cx}" y="${top + size + 66}" text-anchor="middle" font-family="${FONT_ZH}" font-size="17" font-weight="700" fill="${t.hot ? C.ink : C.muted}">${t.zh}</text>`;
+    body += idle(block, 6, 4.2 + i * 0.35, i * 0.9) + en.path + zh;
+    x += size;
+    if (i < ops.length) {
+      const op = pixText(ops[i], x + gapOp / 2 - pixWidth(ops[i], 5) / 2, top + size / 2 - 17, 5, ops[i] === '=' ? mix(C.amber, 70, '#000000') : C.primaryD);
+      body += op.path;
+      x += gapOp;
+    }
+  });
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="一套框架，加上你的 AI，加上你手里的商业引擎，做出一个完整的游戏。Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。">
+${defs(id, W, H)}
+<g clip-path="url(#${id}-round)">
+  <rect width="${W}" height="${H}" fill="url(#${id}-panel)"/>
+  <rect width="${W}" height="${H}" fill="url(#${id}-grid)"/>
+  <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mL)"/>
+  <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mR)"/>
+  ${eyebrow.path}
+  <text x="72" y="116" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">一套框架，加上你的 AI，加上你手里的引擎，</text>
+  <text x="72" y="170" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">做出一个<tspan fill="${mix(C.amber, 70, '#000000')}">完整的游戏</tspan>。</text>
+  <text x="72" y="212" font-family="${FONT_ZH}" font-size="20" fill="${C.muted}">Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。渲染和物理交给你手里的引擎。</text>
+  ${body}
+  ${idle(isoCube(1116, 40, 18, C.mint), 7, 4.6, 0.8)}
+  ${idle(gtSprite(SPRITES.bolt, 1130, 190, 8, C.amber), 6, 3.8, 1.9)}
+  ${brandMark(W - 36 - 48 - 100, H - 36 - 48, 48, .9)}
+  <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="${C.line}"/>
+</g>
+</svg>`;
+}
+
 // ═══════════════════════ 飞书群二维码卡（.gt-card 外壳 + qrencode 矩阵）═══════════════════════
 // 邀请链接的唯一落点。飞书群邀请链接会过期 / 被重置，换链接只改这里再重建。
 export const COMMUNITIES = {
@@ -513,6 +573,7 @@ const files = {
   'sec-special-moves.svg': section('核心优势', 'SPECIAL MOVES', C.rose, false),
   'sec-special-moves-dark.svg': section('核心优势', 'SPECIAL MOVES', C.rose, true),
   'pipeline.svg': pipeline(),
+  'manifesto.svg': manifesto(),
   'sec-out-of-bounds.svg': section('明确不做', 'OUT OF BOUNDS', C.amber, false),
   'sec-out-of-bounds-dark.svg': section('明确不做', 'OUT OF BOUNDS', C.amber, true),
   'sec-next.svg': section('下一步', 'NEXT STAGE', C.mint, false),
