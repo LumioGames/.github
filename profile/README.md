@@ -200,32 +200,32 @@ npx plugins add LumioGames/workflow-plugin
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-3-lives.svg" height="56" alt="3 LIVES">
 </picture>
 
-三条命，掉一条就得重来。哪个仓库都一样。
+做任何一件事都走这三步，少一步就得重来。哪个仓库都一样。
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-heart.svg" width="56" alt="">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-search.svg" width="56" alt="">
 
-**先拿证据，再说做完**
+**先调研**
 
-构建时算哈希，启动时对一遍。Agent 嘴上说通过不算，要看命令和输出。
+动手前先把事情查清楚。要做什么、别人怎么做的、坑在哪，都写下来。查不到的标 [待补]，不瞎猜。
 
 </td>
 <td width="33%" valign="top" align="center">
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-sword.svg" width="56" alt="">
 
-**写的人不审自己**
+**再执行**
 
-reviewer 只干一件事，默认你交的东西有问题，然后去证明。自己审自己只当备用。
+照着写好的卡干活。一个 Agent 写，另一个 Agent 挑刺，lint 和测试过了才算做完。
 
 </td>
 <td width="33%" valign="top" align="center">
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-cube.svg" width="56" alt="">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-levelup.svg" width="56" alt="">
 
-**接口定义只有一份**
+**总结，然后进化**
 
-ABI 从 `native-abi.json` 生成，网络协议从 `hello-wire-v1.json` 生成。手写第二份的，不收。
+做完回头看。哪里错了、哪里能更快，写进仓库的规则和知识里，下一次直接照着做，不用再踩一遍。
 
 </td>
 </tr>

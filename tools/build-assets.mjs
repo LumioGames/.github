@@ -333,6 +333,18 @@ const ICONS = {
     '..#ooooooooo#...', '...#ooooooo#....', '....#ooooo#.....', '.....#ooo#......',
     '......#o#.......', '.......#........', '................', '................',
   ],
+  search: [
+    '................', '......####......', '....##oooo##....', '...#oooooooo#...',
+    '...#oooooooo#...', '..#oooooooooo#..', '..#oooooooooo#..', '..#oooooooooo#..',
+    '...#oooooooo#...', '...#oooooooo#...', '....##oooo##....', '......####x#....',
+    '.........#xx#...', '..........#xx#..', '...........#xx#.', '............##..',
+  ],
+  levelup: [
+    '................', '.......##.......', '......#oo#......', '.....#oooo#.....',
+    '....#oooooo#....', '...#oooooooo#...', '..#oooooooooo#..', '..####oooo####..',
+    '.....#oooo#.....', '.....#oooo#.....', '.....#oooo#.....', '.....######.....',
+    '................', '..############..', '..#oooooooooo#..', '..############..',
+  ],
   sword: [
     '..........####..', '.........#oo##..', '........#oo##...', '.......#oo##....',
     '......#oo##.....', '.....#oo##......', '..#.#oo##.......', '...##o##........',
@@ -457,6 +469,8 @@ const files = {
   'icon-cube.svg': icon('cube', C.mint),
   'icon-heart.svg': icon('heart', C.rose),
   'icon-sword.svg': icon('sword', C.primary),
+  'icon-search.svg': icon('search', C.amber),
+  'icon-levelup.svg': icon('levelup', C.mint),
 };
 for (const [name, svg] of Object.entries(files)) fs.writeFileSync(path.join(OUT, name), svg.trim() + '\n');
 console.log(`wrote ${Object.keys(files).length} files → ${path.relative(ROOT, OUT)}`);
