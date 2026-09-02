@@ -260,8 +260,7 @@ ${defs(id, W, H)}
   ${eyebrow.path}
   ${title.path}
   <text x="72" y="222" font-family="${FONT_ZH}" font-size="32" font-weight="700" fill="${C.ink}">Idea + Lumio + Agent + 游戏引擎</text>
-  <text x="72" y="264" font-family="${FONT_ZH}" font-size="32" font-weight="700" fill="${C.ink}">= 一个<tspan id="h-hot" fill="${mix(C.amber, 70, '#000000')}">完整的商业化游戏<animate attributeName="fill" values="${mix(C.amber, 70, '#000000')};${C.amber};${mix(C.amber, 70, '#000000')}" dur="2.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></tspan></text>
-  <line x1="176" y1="274" x2="432" y2="274" stroke="${C.amber}" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="butt"><animate attributeName="stroke-dashoffset" values="0;-28" dur="1.4s" repeatCount="indefinite"/></line>
+  <text x="72" y="264" font-family="${FONT_ZH}" font-size="32" font-weight="700" fill="${C.ink}">= 一个<tspan fill="${mix(C.amber, 70, '#000000')}">完整的商业化游戏<animate attributeName="fill-opacity" values="1;1;.15;.15" keyTimes="0;.6;.61;1" dur="1.2s" repeatCount="indefinite"/></tspan></text>
   <text x="72" y="300" font-family="${FONT_ZH}" font-size="17" fill="${C.muted}">Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。</text>
   <text x="72" y="326" font-family="${FONT_ZH}" font-size="17" fill="${C.muted}">渲染和物理交给你手里的引擎，玩法、服务器和 Agent 的规矩在这里。</text>
   ${press.path}
