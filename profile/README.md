@@ -264,6 +264,15 @@ npx plugins add LumioGames/workflow-plugin
 
 <br>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-join-us-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-join-us.svg" height="56" alt="加入我们 · JOIN US">
+</picture>
+
+我们很缺人。有开源精神、会用 AI、喜欢往没人走过的地方探的同学，来。也需要做运营的同学，帮我们把产品和理念讲给更多人听。
+
+想聊就进页首的群，QQ 群什么都能问。直接提 Issue 或者 PR 也行。
+
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/footer.svg" width="100%" alt="CONTINUE? YES">
