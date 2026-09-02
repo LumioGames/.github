@@ -363,7 +363,7 @@ ${defs(id, W, H)}
   <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mR)"/>
   ${iconBlock(48, 47, 96, C.primary, gtSprite(SPRITES.star, 48 + 18, 47 + 20, 10, '#fff', 2), 'f-ico')}
   ${title.path}${cursor.path}
-  <text x="176" y="130" font-family="${FONT_ZH}" font-size="24" fill="${C.muted}">给仓库点一颗 ★ 就算投币。Issue 和 PR 都欢迎，带证据来。</text>
+  <text x="176" y="130" font-family="${FONT_ZH}" font-size="24" fill="${C.muted}">觉得有用就点个 ★。Issue 和 PR 都欢迎。</text>
   ${idle(cubes, 6, 5, 0)}
   ${idle(gtSprite(SPRITES.gem, 1130, 120, 9, C.rose), 7, 4, 1.5)}
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="${C.line}"/>

@@ -9,7 +9,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-find-party.svg" height="56" alt="找组织 · FIND YOUR PARTY">
 </picture>
 
-**先进群，再看代码。** QQ 群是交流群，什么都能聊；飞书三个是话题群，按你关心的层进。邀请链接会过期，二维码以这里为准。
+先进群再看代码。QQ 群什么都聊，飞书三个群按话题分，想聊哪块就进哪个。
 
 <table>
 <tr>
@@ -32,8 +32,6 @@
 </tr>
 </table>
 
-不方便扫码的，点徽章也能进。给仓库点一颗 ⭐ 就算投币，Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider-dark.svg">
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider.svg" width="100%" alt="">
@@ -41,9 +39,9 @@
 
 <div align="center">
 
-### 体素引擎、专用服务器、Unity 客户端，全部公开在这里，由人和 Agent 照着同一本规则书一起写。
+### 我们在做一个体素游戏引擎，代码都公开在这里。写代码的有人，也有 AI Agent，大家用同一套规矩干活。
 
-**A voxel game engine in Rust & C#, built by humans and coding agents who read the same rulebook.**
+**A voxel game engine in Rust and C#. Humans and coding agents build it together, under the same rules.**
 
 <br>
 
@@ -62,7 +60,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-stage-select.svg" height="56" alt="STAGE SELECT">
 </picture>
 
-四条主线。想知道我们怎么做游戏，从这四个仓库进。
+四个最主要的仓库。想看我们怎么做游戏，从这四个进。
 
 <table>
 <tr>
@@ -71,7 +69,7 @@
 
 ### [LumioGame](https://github.com/LumioGames/LumioGame) <sub>🏰 PRODUCT · 游戏本体</sub>
 
-游戏产品本身。玩法、复制映射、配表、内容、Scenario、存档迁移和发布清单，在这一层拼成一个具体的游戏。第一个垂直切片是放下一个方块：要过权限、资源、Chunk 校验和跨 World 事务，重复命令不会二次扣费。
+游戏本身。玩法、配表、内容、存档、发布，都在这一层拼成一个具体的游戏。现在跑通的第一个完整流程是放一个方块，要查权限、扣资源、改地形，同一条命令重复发不会扣两次。
 
 <a href="https://github.com/LumioGames/LumioGame/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/LumioGame?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
 <img src="https://img.shields.io/github/languages/top/LumioGames/LumioGame?style=flat-square&color=1E2A3A" alt="language">
@@ -83,7 +81,7 @@
 
 ### [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine) <sub>⚙️ ENGINE · SDK 组装根</sub>
 
-引擎的组装根。把领域无关的 Rust Native Kernel、Voxel 引擎和 C# 托管 Runtime 装成一个可发布的 LumioEngineSDK，Server 和 Client 只认它给出的 API / ABI 边界。每次构建都算 BuildId、ABI Hash 和 SHA-256，Host 启动时逐项核对，"跑起来了"以哈希为准。
+引擎的组装层。Rust 写的底层内核和体素引擎，加上 C# 写的运行时，在这里打包成一个 SDK，服务器和客户端都只认这个 SDK 的接口。每次构建都会算一遍哈希，启动时再对一遍，对不上就不算跑起来。
 
 <a href="https://github.com/LumioGames/LumioGameEngine/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/LumioGameEngine?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
 <img src="https://img.shields.io/github/languages/top/LumioGames/LumioGameEngine?style=flat-square&color=1E2A3A" alt="language">
@@ -97,7 +95,7 @@
 
 ### [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec) <sub>📜 FRAMEWORK · Agent 规则书</sub>
 
-一个框架管住所有编码 Agent。Claude Code、Codex、Cursor、Grok 随便换，项目的规则、知识、决策和任务进度都留在仓库里的 `.spec/`，不留在任何一个 Agent 的记忆里。写代码的不审自己的代码，"完成"由 lint、测试和收口门禁说了算。
+管 AI 编码 Agent 的一套规矩。Claude Code、Codex、Cursor 随便换，项目的规则、知识和进度都放在仓库的 `.spec/` 目录里，换了 Agent 不用重新教。写代码的 Agent 不审自己的代码，算不算做完由 lint 和测试说了算。
 
 <a href="https://github.com/LumioGames/LumioAgentSpec/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/LumioAgentSpec?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
 <img src="https://img.shields.io/github/languages/top/LumioGames/LumioAgentSpec?style=flat-square&color=1E2A3A" alt="language">
@@ -109,7 +107,7 @@
 
 ### [workflow-plugin](https://github.com/LumioGames/workflow-plugin) <sub>🔌 PLUGIN · 项目管理</sub>
 
-让 AI 不只写代码，还替你管项目。把 Claude Code、Cursor、Codex 接进 [Workflow](https://workflow.games)：一句话拆成能直接派活的开发蓝图，带查重记 bug，在真实线上环境跑测验收，按判定流转工单。每一次写入都要读回验证，才允许说"成功"。
+让 AI 顺手把项目管理也做了。装上以后，Claude Code、Cursor、Codex 能直接连 [Workflow](https://workflow.games)，一句话拆成需求单，记 bug 会先查重，改完在线上真实环境复测，工单状态自己流转。每次写入都要读回来核对一遍才算成功。
 
 <a href="https://github.com/LumioGames/workflow-plugin/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/workflow-plugin?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
 <img src="https://img.shields.io/github/languages/top/LumioGames/workflow-plugin?style=flat-square&color=1E2A3A" alt="language">
@@ -126,7 +124,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-tech-tree.svg" height="56" alt="TECH TREE">
 </picture>
 
-引擎按依赖方向分四级，箭头只能往下指。上层拼装下层，下层不知道上层是谁。
+引擎分四层，上层用下层，下层不知道上层是谁。箭头只往下指。
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#7C8CFF','primaryTextColor':'#ffffff','primaryBorderColor':'#5B69D6','lineColor':'#7C8CFF','fontFamily':'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace','fontSize':'14px'}}}%%
@@ -152,7 +150,7 @@ flowchart TB
   class Voxel,Core rust
 ```
 
-| 层 | 仓库 | 语言 | 拥有什么 | 不碰什么 |
+| 层 | 仓库 | 语言 | 管什么 | 不管什么 |
 | :-- | :-- | :-- | :-- | :-- |
 | **LV.4 产品** | [LumioGame](https://github.com/LumioGames/LumioGame) | C# | 玩法语义、Mapping、配置、内容、发布清单 | Native、Voxel 内部、Host 进程 |
 | **LV.3 Host** | [LumioServer](https://github.com/LumioGames/LumioServer) | Rust + C# | 专用服务器进程、网络、Session、WorldSlot、CoreCLR Hosting | Runtime 语义、玩法规则 |
@@ -160,8 +158,8 @@ flowchart TB
 | **LV.2 SDK** | [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine) | Rust + C# | SDK 组装、Native 聚合、ABI / Binding 生成、共享 Loader、开发启动器 | 具体玩法、Host 业务 |
 | **LV.2 Runtime** | [LumioGameRuntime](https://github.com/LumioGames/LumioGameRuntime) | C# | ECS、Tick、Coordinator、Replication、GAS、Persistence、热重载 | 进程、Socket、Voxel 内部 |
 | **LV.1 Native** | [LumioVoxelEngine](https://github.com/LumioGames/LumioVoxelEngine) | Rust | VoxelWorld、Chunk、Revision、Mutation、Streaming、Snapshot | 玩法权限、Socket、Host 生命周期 |
-| **LV.1 Native** | [LumioNativeCore](https://github.com/LumioGames/LumioNativeCore) | Rust | 领域无关 Kernel、Handle、Error、Capability、内存与 Job | Voxel、ECS、网络 |
-| **配置表** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | Schema 优先的配表源、编译器与导出工具 | 运行时逻辑 |
+| **LV.1 Native** | [LumioNativeCore](https://github.com/LumioGames/LumioNativeCore) | Rust | 通用内核、Handle、Error、Capability、内存和 Job | Voxel、ECS、网络 |
+| **配置表** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | 配表的源文件、Schema、编译器和导出工具 | 运行时逻辑 |
 
 <br>
 
@@ -170,28 +168,28 @@ flowchart TB
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-the-crew.svg" height="56" alt="THE CREW">
 </picture>
 
-这支队伍里有人，也有 Agent。区别只有一个：人拍板，Agent 干活，两边看的是同一本规则书。
+队伍里有人，也有 Agent。人拍板，Agent 干活，看的是同一份规矩。
 
-**主 Agent 调度，子 Agent 执行，Skill 是方法，`.md` 是规则。**
+**主 Agent 派活，子 Agent 干活。怎么干写在 Skill 里，什么不能干写在 `.md` 里。**
 
-| 🕹️ 招式 | 谁出手 | 打出什么 |
+| 🕹️ 哪一步 | 谁来做 | 做什么 |
 | :-- | :-- | :-- |
-| `brainstorming` | 主 Agent + 人 | 先把意图、需求和设计谈清楚，再动手 |
-| `writing-plans` | 主 Agent | 先切契约卡，再把剩下的拆成互不重叠的任务卡 |
-| `subagent-driven-development` | 子 Agent，按 wave 并行 | 各自在独立 worktree 里实现，改完带证据交回 |
-| `reviewer` | 一个只负责挑刺的子 Agent | 假设交付是坏的，然后证明它；写的人永远不审自己 |
-| `closeout-gate` | 机器 | 看 diff 决定要不要审、审多深；lint 挂了就拦住提交 |
-| `/workflow:plan` · `/workflow:qa` | Agent 直连 [Workflow](https://workflow.games) | 一句话落成需求单，改完在真实线上环境复测，状态自己流转 |
+| `brainstorming` | 主 Agent 和人 | 先把要做什么、为什么做谈清楚，再动手 |
+| `writing-plans` | 主 Agent | 先定接口，再把活拆成互不重叠的小卡 |
+| `subagent-driven-development` | 子 Agent，几个一起上 | 各自在独立 worktree 里改，改完带证据交回 |
+| `reviewer` | 一个专门挑刺的子 Agent | 默认你交的东西有问题，然后去证明。写代码的从不审自己 |
+| `closeout-gate` | 机器 | 看 diff 决定要不要审、审多深。lint 不过，提交被拦住 |
+| `/workflow:plan` · `/workflow:qa` | Agent 直连 [Workflow](https://workflow.games) | 一句话变成需求单，改完在线上复测，状态自己流转 |
 
-装上同一套规则书，你的 Agent 也能入队：
+想让你自己的 Agent 也这么干，装这两个就行。
 
 ```bash
-# Agent 规则书：规则、知识、任务进度都进 .spec/
+# 规矩、知识、进度都放进 .spec/
 claude plugin marketplace add LumioGames/LumioAgentSpec && claude plugin install lumio@lumioagentspec
 ```
 
 ```bash
-# 项目管理：Claude Code / Cursor / Codex 直连 Workflow
+# 让 Claude Code / Cursor / Codex 直连 Workflow
 npx plugins add LumioGames/workflow-plugin
 ```
 
@@ -202,16 +200,16 @@ npx plugins add LumioGames/workflow-plugin
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-3-lives.svg" height="56" alt="3 LIVES">
 </picture>
 
-三条命，掉一条就得重来。所有仓库通用。
+三条命，掉一条就得重来。哪个仓库都一样。
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-heart.svg" width="56" alt="">
 
-**证据先于声称**
+**先拿证据，再说做完**
 
-构建算哈希，Host 启动时逐项核对。Agent 说"通过"不算数，命令和它的输出才算。
+构建时算哈希，启动时对一遍。Agent 嘴上说通过不算，要看命令和输出。
 
 </td>
 <td width="33%" valign="top" align="center">
@@ -219,15 +217,15 @@ npx plugins add LumioGames/workflow-plugin
 
 **写的人不审自己**
 
-reviewer 的唯一工作是假设你的交付是坏的，然后证明它。自审是已知降级，永远不是默认。
+reviewer 只干一件事，默认你交的东西有问题，然后去证明。自己审自己只当备用。
 
 </td>
 <td width="33%" valign="top" align="center">
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-cube.svg" width="56" alt="">
 
-**契约只有一份真值**
+**接口定义只有一份**
 
-ABI 从 `native-abi.json` 生成，Wire 协议从 `hello-wire-v1.json` 生成。手写第二套布局，出局。
+ABI 从 `native-abi.json` 生成，网络协议从 `hello-wire-v1.json` 生成。手写第二份的，不收。
 
 </td>
 </tr>
@@ -239,6 +237,6 @@ ABI 从 `native-abi.json` 生成，Wire 协议从 `hello-wire-v1.json` 生成。
 
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/footer.svg" width="100%" alt="CONTINUE? YES">
 
-<sub>像素图全是 SVG，在 <a href="https://github.com/LumioGames/.github">LumioGames/.github</a> 里现画的，没用一张外部图片。</sub>
+<sub>页面上的像素图都是 SVG，源码在 <a href="https://github.com/LumioGames/.github">LumioGames/.github</a>。</sub>
 
 </div>
