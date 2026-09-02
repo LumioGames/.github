@@ -41,12 +41,6 @@
 
 <div align="center">
 
-### 我们在做一套 AI Native 的通用体素 Gameplay 框架，代码都公开在这里。写代码的有人，也有 AI Agent，大家用同一套规矩干活。
-
-**An AI-native voxel gameplay framework in Rust and C#. Bring your own engine and your own agents, ship a complete game.**
-
-<br>
-
 <a href="https://github.com/LumioGames/LumioNativeCore"><img src="https://img.shields.io/badge/Rust-Native%20Kernel%20%2B%20Voxel-DEA584?style=for-the-badge&logo=rust&logoColor=1E2A3A" alt="Rust"></a>
 <a href="https://github.com/LumioGames/LumioGameRuntime"><img src="https://img.shields.io/badge/C%23-ECS%20Runtime%20%2B%20Hosts-7C8CFF?style=for-the-badge&logo=dotnet&logoColor=white" alt="C#"></a>
 <a href="https://agent-plugins.org/"><img src="https://img.shields.io/badge/Agent%20Plugins-1.0.0-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="Agent Plugins 1.0.0"></a>
