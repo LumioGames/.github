@@ -454,6 +454,8 @@ const files = {
   'footer.svg': footer(),
   'sec-why.svg': section('为什么做', 'WHY WE BUILD', C.amber, false),
   'sec-why-dark.svg': section('为什么做', 'WHY WE BUILD', C.amber, true),
+  'sec-next.svg': section('下一步', 'NEXT STAGE', C.mint, false),
+  'sec-next-dark.svg': section('下一步', 'NEXT STAGE', C.mint, true),
   'sec-stage-select.svg': section('主线', 'STAGE SELECT', C.primary, false),
   'sec-stage-select-dark.svg': section('主线', 'STAGE SELECT', C.primary, true),
   'sec-tech-tree.svg': section('技能树', 'TECH TREE', C.mint, false),
