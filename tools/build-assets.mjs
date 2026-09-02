@@ -405,8 +405,33 @@ function qrCard(key) {
 </svg>`;
 }
 
+// ═══════════════════════ 分割线：发丝线 + 中间一小撮签名图形 ═══════════════════════
+function divider(dark) {
+  const W = 1200, H = 56, cy = 30;
+  const line = dark ? '#3A4670' : C.line;
+  const dot = dark ? '#4A567F' : C.faint;
+  const mid = W / 2;
+  let dots = '';
+  for (let i = 1; i <= 4; i++) {
+    dots += `<rect x="${mid - 150 - i * 14}" y="${cy - 2}" width="4" height="4" fill="${dot}" fill-opacity="${1 - i * 0.2}"/>`;
+    dots += `<rect x="${mid + 150 + i * 14 - 4}" y="${cy - 2}" width="4" height="4" fill="${dot}" fill-opacity="${1 - i * 0.2}"/>`;
+  }
+  const label = pixText('STAGE 1 - 2', mid - pixWidth('STAGE 1 - 2', 2) / 2, cy + 12, 2, dot);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="divider">
+<rect x="0" y="${cy - 0.5}" width="${mid - 210}" height="1" fill="${line}"/>
+<rect x="${mid + 210}" y="${cy - 0.5}" width="${mid - 210}" height="1" fill="${line}"/>
+${dots}
+${idle(isoCube(mid - 60, cy - 22, 13, C.primary), 4, 4.2, 0)}
+${idle(gtSprite(SPRITES.star, mid - 20, cy - 20, 6, C.amber), 5, 3.6, 1.1)}
+${idle(isoCube(mid + 60, cy - 22, 13, C.mint), 4, 4.8, 2)}
+${label.path}
+</svg>`;
+}
+
 // ═══════════════════════ 写出 ═══════════════════════
 const files = {
+  'divider.svg': divider(false),
+  'divider-dark.svg': divider(true),
   'qr-qq.svg': qrCard('qq'),
   'qr-game.svg': qrCard('game'),
   'qr-engine.svg': qrCard('engine'),

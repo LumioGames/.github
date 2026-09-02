@@ -39,9 +39,12 @@
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a>
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a>
 
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider.svg" width="100%" alt="">
+</picture>
 
-<br>
+<div align="center">
 
 ### 体素引擎、专用服务器、Unity 客户端，全部公开在这里，由人和 Agent 照着同一本规则书一起写。
 
