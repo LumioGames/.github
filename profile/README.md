@@ -317,9 +317,42 @@ npx plugins add LumioGames/workflow-plugin
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-join-us.svg" height="56" alt="加入我们 · JOIN US">
 </picture>
 
-我们很缺人。有开源精神、会用 AI、喜欢往没人走过的地方探的同学，来。也需要做运营的同学，帮我们把产品和理念讲给更多人听。
+我们很缺人。这段旅程刚从 Hello World 起步，现在进来的，都是早期成员。
 
-想聊就进页首的群，QQ 群什么都能问。直接提 Issue 或者 PR 也行。
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-search.svg" width="56" alt="">
+
+**爱探索的工程师**
+
+有开源精神，会用 AI 干活。引擎、服务器、客户端、工具链，哪块顺手做哪块。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-spec.svg" width="56" alt="">
+
+**把 Agent 玩得转的人**
+
+会调教 Claude Code、Codex、Cursor 这类工具，愿意一起把 AI 写游戏的规矩立起来。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-heart.svg" width="56" alt="">
+
+**做运营的同学**
+
+把产品和理念讲给更多人听。写文章、做视频、跑社区，都算。
+
+</td>
+</tr>
+</table>
+
+**怎么加入**
+
+1. 进页首任意一个群，QQ 群什么都能问。
+2. 挑一个仓库的 Issue 动手，或者直接提 PR。
+3. 想认领一整块的，在群里说一声。
 
 <div align="center">
 
