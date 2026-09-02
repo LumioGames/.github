@@ -206,7 +206,7 @@
 引擎分四层，上层用下层，下层不知道上层是谁。箭头只往下指。
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#7C8CFF','primaryTextColor':'#ffffff','primaryBorderColor':'#5B69D6','lineColor':'#7C8CFF','fontFamily':'ui-monospace, SFMono-Regular, Menlo, Consolas, monospace','fontSize':'14px'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#7C8CFF','primaryTextColor':'#ffffff','primaryBorderColor':'#5B69D6','lineColor':'#7C8CFF'}}}%%
 flowchart TB
   Game["🏰 LumioGame<br/>玩法 · 内容 · 发布组合"]
   Server["🛡️ LumioServer<br/>权威 Host · 网络 · CoreCLR Hosting"]
