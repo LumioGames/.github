@@ -64,12 +64,60 @@
 
 我做了 10 年游戏引擎，熟悉游戏开发的每个流程、每一个模块。现在我要用 AI Native 的思想，重新梳理一套游戏开发的新规范。
 
-1. 画面与逻辑分离，逻辑不依赖任何引擎。
-2. 这套框架可以迁移到任何商业引擎上。
-3. 代码开源，长期维护。每个大版本都会发布一个游戏，游戏的复杂度会逐渐变高。
-4. 解决商业引擎在 DS 服务器架构上的痛点。
-5. 目标是支持 100 人同房间，覆盖 MOBA、MMO，甚至类吃鸡这样的游戏类型。
-6. 希望有更多的人加入这段开源旅程。
+<table>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-cube.svg" width="56" alt="">
+
+**画面与逻辑分离**
+
+逻辑不依赖任何引擎。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-workflow.svg" width="56" alt="">
+
+**迁得走**
+
+这套框架可以迁移到任何商业引擎上。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-game.svg" width="56" alt="">
+
+**开源，长期维护**
+
+每个大版本都发布一个游戏，游戏的复杂度逐渐变高。
+
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="56" alt="">
+
+**DS 服务器**
+
+解决商业引擎在专用服务器架构上的痛点。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-sword.svg" width="56" alt="">
+
+**100 人同房**
+
+覆盖 MOBA、MMO，甚至类吃鸡这样的游戏类型。
+
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-heart.svg" width="56" alt="">
+
+**一起走**
+
+希望有更多的人加入这段开源旅程。
+
+</td>
+</tr>
+</table>
 
 <br>
 
