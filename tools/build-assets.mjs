@@ -5,6 +5,7 @@
 // 产物：profile/assets/*.svg。用法：node tools/build-assets.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -370,8 +371,50 @@ ${defs(id, W, H)}
 </svg>`;
 }
 
+// ═══════════════════════ 飞书群二维码卡（.gt-card 外壳 + qrencode 矩阵）═══════════════════════
+// 邀请链接的唯一落点。飞书群邀请链接会过期 / 被重置，换链接只改这里再重建。
+export const COMMUNITIES = {
+  qq: { zh: 'QQ 交流群', en: 'QQ GROUP 972220164', tone: C.primaryD,
+    url: 'https://qm.qq.com/q/PGkXh4tCyQ' },
+  game: { zh: 'LumioGame 开发者社区', en: 'LUMIOGAME COMMUNITY', tone: C.amber,
+    url: 'https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396' },
+  engine: { zh: 'LumioEngine 开发者社区', en: 'LUMIOENGINE COMMUNITY', tone: C.mint,
+    url: 'https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e' },
+  workflow: { zh: 'Workflow 开发者社区', en: 'WORKFLOW COMMUNITY', tone: C.primary,
+    url: 'https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5' },
+};
+function qrMatrix(url) {
+  // 纠错 M、零留白、1 模块 = 1 单位；留白由卡片自己给
+  const svg = execFileSync('qrencode', ['-t', 'SVG', '-l', 'M', '-m', '0', '-s', '1', '-o', '-', url], { encoding: 'utf8' });
+  const size = +svg.match(/viewBox="0 0 (\d+) \d+"/)[1];
+  const cells = [...svg.matchAll(/<rect x="(\d+)" y="(\d+)" width="1" height="1" fill="#[0-9a-f]{6}"\/>/g)].map((m) => [+m[1], +m[2]]);
+  if (!cells.length) throw new Error('qrencode 没输出模块');
+  return { size, cells };
+}
+function qrCard(key) {
+  const { zh, en, tone, url } = COMMUNITIES[key];
+  const { size, cells } = qrMatrix(url);
+  const W = 260, H = 318, pad = 30, Q = W - pad * 2, m = Q / size;
+  let d = '';
+  for (const [x, y] of cells) d += `M${(pad + x * m).toFixed(3)} ${(pad + y * m).toFixed(3)}h${(m + 0.03).toFixed(3)}v${(m + 0.03).toFixed(3)}h-${(m + 0.03).toFixed(3)}z`;
+  const enTxt = pixText(en, pad + 16, 296, 1.7, C.faint);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="飞书扫码加入 ${zh}">
+<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="#fff" stroke="${C.line}"/>
+<path d="${d}" fill="${C.ink}"/>
+<rect x="${pad}" y="${pad + Q + 22}" width="4" height="26" rx="2" fill="${tone}"/>
+<text x="${pad + 16}" y="${pad + Q + 42}" font-family="${FONT_ZH}" font-size="17" font-weight="700" fill="${C.ink}">${zh}</text>
+${enTxt.path}
+</svg>`;
+}
+
 // ═══════════════════════ 写出 ═══════════════════════
 const files = {
+  'qr-qq.svg': qrCard('qq'),
+  'qr-game.svg': qrCard('game'),
+  'qr-engine.svg': qrCard('engine'),
+  'qr-workflow.svg': qrCard('workflow'),
+  'sec-find-party.svg': section('找组织', 'FIND YOUR PARTY', C.rose, false),
+  'sec-find-party-dark.svg': section('找组织', 'FIND YOUR PARTY', C.rose, true),
   'hero.svg': hero(),
   'footer.svg': footer(),
   'sec-stage-select.svg': section('主线', 'STAGE SELECT', C.primary, false),

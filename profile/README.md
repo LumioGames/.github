@@ -1,3 +1,33 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-find-party-dark.svg">
+  <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-find-party.svg" height="56" alt="找组织 · FIND YOUR PARTY">
+</picture>
+
+**先进群，再看代码。** QQ 群是交流群，什么都能聊；飞书三个是话题群，按你关心的层进。邀请链接会过期，二维码以这里为准。
+
+<table>
+<tr>
+<td width="25%" align="center" valign="top">
+<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-qq.svg" width="220" alt="QQ 交流群 LumioGames，群号 972220164"></a><br>
+<b>QQ 交流群</b><br><sub>群号 972220164 · 什么都能聊</sub>
+</td>
+<td width="25%" align="center" valign="top">
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-game.svg" width="220" alt="飞书话题群 · LumioGame 开发者社区"></a><br>
+<b>LumioGame 开发者社区</b><br><sub>飞书话题群 · 玩法、内容、发布</sub>
+</td>
+<td width="25%" align="center" valign="top">
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-engine.svg" width="220" alt="飞书话题群 · LumioEngine 开发者社区"></a><br>
+<b>LumioEngine 开发者社区</b><br><sub>飞书话题群 · Rust / C# 引擎层</sub>
+</td>
+<td width="25%" align="center" valign="top">
+<a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/qr-workflow.svg" width="220" alt="飞书话题群 · Workflow 开发者社区"></a><br>
+<b>Workflow 开发者社区</b><br><sub>飞书话题群 · Agent 与项目管理</sub>
+</td>
+</tr>
+</table>
+
+<br>
+
 <div align="center">
 
 <a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL ENGINE + AGENT CREW · PRESS START"></a>
@@ -124,9 +154,7 @@ flowchart TB
 | **LV.2 Runtime** | [LumioGameRuntime](https://github.com/LumioGames/LumioGameRuntime) | C# | ECS、Tick、Coordinator、Replication、GAS、Persistence、热重载 | 进程、Socket、Voxel 内部 |
 | **LV.1 Native** | [LumioVoxelEngine](https://github.com/LumioGames/LumioVoxelEngine) | Rust | VoxelWorld、Chunk、Revision、Mutation、Streaming、Snapshot | 玩法权限、Socket、Host 生命周期 |
 | **LV.1 Native** | [LumioNativeCore](https://github.com/LumioGames/LumioNativeCore) | Rust | 领域无关 Kernel、Handle、Error、Capability、内存与 Job | Voxel、ECS、网络 |
-| **道具** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | Schema 优先的配表源、编译器与导出工具 | 运行时逻辑 |
-
-> 🗃️ [LumioCoreEngine](https://github.com/LumioGames/LumioCoreEngine) 已退役，实现并入 LumioGameEngine 的 `engine/native/`，仓库只留作历史审计与回滚。
+| **配置表** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | Schema 优先的配表源、编译器与导出工具 | 运行时逻辑 |
 
 <br>
 
@@ -207,8 +235,9 @@ ABI 从 `native-abi.json` 生成，Wire 协议从 `hello-wire-v1.json` 生成。
 
 给仓库点一颗 ⭐ 就算投币。Issue 和 PR 都欢迎，架构问题去 [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine/issues)，Agent 框架问题去 [LumioAgentSpec](https://github.com/LumioGames/LumioAgentSpec/issues)。
 
-想直接聊，三个开发者社区都在飞书群里，按你关心的层进：
+想直接聊，二维码在页首。不方便扫的，点这几个链接也能进：
 
+<a href="https://qm.qq.com/q/PGkXh4tCyQ"><img src="https://img.shields.io/badge/QQ%20%E4%BA%A4%E6%B5%81%E7%BE%A4-972220164-6171F0?style=for-the-badge&logo=tencentqq&logoColor=white" alt="QQ 交流群 972220164"></a>
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=b24vf257-5a2b-41ce-935e-bc4ce19dc396"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioGame%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-FFB86B?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioGame 开发者社区"></a>
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=fffn1ae7-fd83-4315-96ac-6fa3aba3968e"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-LumioEngine%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-5DE2C6?style=for-the-badge&logoColor=1E2A3A" alt="飞书群 · LumioEngine 开发者社区"></a>
 <a href="https://applink.feishu.cn/client/chat/chatter/add_by_link?link_token=7bbl451c-aa1d-4e6d-a21c-fd1f1ebeb6b5"><img src="https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6%E7%BE%A4-Workflow%20%E5%BC%80%E5%8F%91%E8%80%85%E7%A4%BE%E5%8C%BA-7C8CFF?style=for-the-badge&logoColor=white" alt="飞书群 · Workflow 开发者社区"></a>
