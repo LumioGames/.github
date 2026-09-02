@@ -1,3 +1,9 @@
+<div align="center">
+
+<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL ENGINE + AGENT CREW · PRESS START"></a>
+
+</div>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-find-party-dark.svg">
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/sec-find-party.svg" height="56" alt="找组织 · FIND YOUR PARTY">
@@ -26,11 +32,7 @@
 </tr>
 </table>
 
-<br>
-
 <div align="center">
-
-<a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg" width="100%" alt="LUMIO GAMES · VOXEL ENGINE + AGENT CREW · PRESS START"></a>
 
 <br>
 

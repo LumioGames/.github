@@ -394,16 +394,14 @@ function qrMatrix(url) {
 function qrCard(key) {
   const { zh, en, tone, url } = COMMUNITIES[key];
   const { size, cells } = qrMatrix(url);
-  const W = 260, H = 318, pad = 30, Q = W - pad * 2, m = Q / size;
+  const W = 260, H = 300, pad = 30, Q = W - pad * 2, m = Q / size;
   let d = '';
   for (const [x, y] of cells) d += `M${(pad + x * m).toFixed(3)} ${(pad + y * m).toFixed(3)}h${(m + 0.03).toFixed(3)}v${(m + 0.03).toFixed(3)}h-${(m + 0.03).toFixed(3)}z`;
-  const enTxt = pixText(en, pad + 16, 296, 1.7, C.faint);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="飞书扫码加入 ${zh}">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="扫码加入 ${zh} · ${en}">
 <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="#fff" stroke="${C.line}"/>
 <path d="${d}" fill="${C.ink}"/>
 <rect x="${pad}" y="${pad + Q + 22}" width="4" height="26" rx="2" fill="${tone}"/>
 <text x="${pad + 16}" y="${pad + Q + 42}" font-family="${FONT_ZH}" font-size="17" font-weight="700" fill="${C.ink}">${zh}</text>
-${enTxt.path}
 </svg>`;
 }
 
