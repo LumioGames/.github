@@ -86,15 +86,15 @@
 
 <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/pipeline.svg" width="100%" alt="开源才是最大的 UGC，一个人就是一个团队。完整的 AI Native 游戏研发生产管线 · 技术 / 策划 / 美术">
 
-| <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="28" align="absmiddle" alt=""> 技术 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-spec.svg" width="28" align="absmiddle" alt=""> 策划 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-art.svg" width="28" align="absmiddle" alt=""> 美术 |
-| :-- | :-- | :-- |
-| **客户端 + 服务器 + 游戏，完整开源的解决方案** | **给 Agent 用的配置工作流** | **美术开发工作流** 🔒 |
-| **画面与逻辑分离** | **网页即工具** | |
-| **不绑定引擎，迁得走** | | |
-| **Rust + C# 的 DS 服务器，100 人同房** | | |
-| **ECS + GAS，先进的游戏设计架构** | | |
-| **体素世界支持 UGC 和 AGC，给场景设计带来无穷的想象力** | | |
-| **长期维护** | | |
+| <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="28" align="absmiddle" alt=""> 技术 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-spec.svg" width="28" align="absmiddle" alt=""> 策划 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-art.svg" width="28" align="absmiddle" alt=""> 美术 | <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-search.svg" width="28" align="absmiddle" alt=""> QA |
+| :-- | :-- | :-- | :-- |
+| **客户端 + 服务器 + 游戏，完整开源的解决方案** | **给 Agent 用的配置工作流** | **美术开发工作流** 🔒 | **AI 自动化测试框架** |
+| **画面与逻辑分离** | **网页即工具** | | |
+| **不绑定引擎，迁得走** | | | |
+| **Rust + C# 的 DS 服务器，100 人同房** | | | |
+| **ECS + GAS，先进的游戏设计架构** | | | |
+| **体素世界支持 UGC 和 AGC，给场景设计带来无穷的想象力** | | | |
+| **长期维护** | | | |
 
 <br>
 
