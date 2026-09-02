@@ -37,7 +37,7 @@
   <img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/divider.svg" width="100%" alt="">
 </picture>
 
-<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/manifesto.svg" width="100%" alt="一套框架，加上你的 AI，加上你手里的引擎，做出一个完整的游戏。Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。">
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/manifesto.svg" width="100%" alt="Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏。Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。">
 
 <div align="center">
 

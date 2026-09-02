@@ -297,6 +297,12 @@ ${en1.path}
 
 // ═══════════════════════ 仓库图标（.gt-feat__icon 配方 + 16×16 像素画）═══════════════════════
 const ICONS = {
+  bulb: [
+    '................', '.....######.....', '....#oooooo#....', '...#oooooooo#...',
+    '...#oo#oooo##...', '...#oo#ooooo#...', '...#oooooooo#...', '...#oooooooo#...',
+    '....#oooooo#....', '.....#oooo#.....', '.....######.....', '.....#xxxx#.....',
+    '.....######.....', '.....#xxxx#.....', '......####......', '................',
+  ],
   robot: [
     '.......##.......', '.......##.......', '.....######.....', '..############..',
     '..#oooooooooo#..', '..#o###oo###o#..', '..#o#xx#oo#xx#..', '..#o###oo###o#..',
@@ -451,13 +457,14 @@ function manifesto() {
   const eyebrow = pixText('AI NATIVE / VOXEL GAMEPLAY FRAMEWORK', 72, 44, 2.4, C.primaryD);
   // 四个站点 + 三个运算符，居中排成一行等式
   const terms = [
-    { key: 'fw', sprite: 'cube', tone: C.primary, en: 'FRAMEWORK', zh: 'Lumio 框架' },
-    { key: 'ai', sprite: 'robot', tone: C.mint, en: 'AI AGENT', zh: '你的 AI' },
+    { key: 'idea', sprite: 'bulb', tone: C.amber, en: 'IDEA', zh: '你的想法' },
+    { key: 'fw', sprite: 'cube', tone: C.primary, en: 'LUMIO', zh: 'Lumio 框架' },
+    { key: 'ai', sprite: 'robot', tone: C.mint, en: 'AGENT', zh: '你的 AI Agent' },
     { key: 'eng', sprite: 'gear', tone: C.rose, en: 'ANY ENGINE', zh: '商业引擎 / Godot' },
-    { key: 'game', sprite: 'castle', tone: C.amber, en: 'A GAME', zh: '一个完整的游戏', hot: true },
+    { key: 'game', sprite: 'castle', tone: C.amber, en: 'SHIP IT', zh: '一个完整的商业化游戏', hot: true },
   ];
-  const ops = ['+', '+', '='];
-  const size = 84, top = 244, px = 4, off = (size - 16 * px) / 2, gapOp = 96;
+  const ops = ['+', '+', '+', '='];
+  const size = 84, top = 244, px = 4, off = (size - 16 * px) / 2, gapOp = 92;
   const rowW = terms.length * size + ops.length * gapOp;
   let x = (W - rowW) / 2;
   let body = '';
@@ -487,13 +494,13 @@ ${defs(id, W, H)}
   <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mL)"/>
   <rect width="${W}" height="${H}" fill="url(#${id}-dots)" mask="url(#${id}-mR)"/>
   ${eyebrow.path}
-  <text x="72" y="116" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">一套框架，加上你的 AI，加上你手里的引擎，</text>
-  <text x="72" y="170" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">做出一个<tspan fill="${mix(C.amber, 70, '#000000')}">完整的游戏</tspan>。</text>
+  <text x="72" y="116" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">Idea + Lumio + Agent + 游戏引擎</text>
+  <text x="72" y="170" font-family="${FONT_ZH}" font-size="46" font-weight="700" fill="${C.ink}">= 一个<tspan fill="${mix(C.amber, 70, '#000000')}">完整的商业化游戏</tspan></text>
   <text x="72" y="212" font-family="${FONT_ZH}" font-size="20" fill="${C.muted}">Lumio 不是引擎，是一套 AI Native 的通用体素 Gameplay 框架，也是一套架构。渲染和物理交给你手里的引擎。</text>
   ${body}
-  ${idle(isoCube(1116, 40, 18, C.mint), 7, 4.6, 0.8)}
+  ${idle(isoCube(1116, 330, 18, C.mint), 7, 4.6, 0.8)}
   ${idle(gtSprite(SPRITES.bolt, 1130, 190, 8, C.amber), 6, 3.8, 1.9)}
-  ${brandMark(W - 36 - 48 - 100, H - 36 - 48, 48, .9)}
+  ${brandMark(W - 36 - 48 - 100, 30, 48, .9)}
   <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="26" fill="none" stroke="${C.line}"/>
 </g>
 </svg>`;
