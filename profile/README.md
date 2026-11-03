@@ -156,9 +156,6 @@
 
 引擎的组装层。Rust 写的底层内核和体素引擎，加上 C# 写的运行时，在这里打包成一个 SDK，服务器和客户端都只认这个 SDK 的接口。每次构建都会算一遍哈希，启动时再对一遍，对不上就不算跑起来。
 
-<img src="https://img.shields.io/github/languages/top/LumioGames/LumioGameEngine?style=flat-square&color=1E2A3A" alt="language">
-<img src="https://img.shields.io/github/last-commit/LumioGames/LumioGameEngine?style=flat-square&color=5DE2C6&label=last%20save" alt="last save">
-
 </td>
 </tr>
 <tr>
