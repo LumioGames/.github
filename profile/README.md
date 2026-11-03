@@ -2,6 +2,10 @@
 
 <a href="https://github.com/LumioGames"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/hero.svg?v=5" width="100%" alt="LUMIO GAMES · Idea + Lumio + Agent + 游戏引擎 = 一个完整的商业化游戏 · PRESS START"></a>
 
+<a href="https://lumiogames.cn/?utm_source=github&utm_medium=org_readme&utm_campaign=site"><img src="https://img.shields.io/badge/%E5%AE%98%E7%BD%91-lumiogames.cn-6171F0?style=for-the-badge" alt="官网 lumiogames.cn"></a>
+<a href="https://lumiogames.cn/studio/?utm_source=github&utm_medium=org_readme&utm_campaign=studio_hub"><img src="https://img.shields.io/badge/%E5%88%9B%E4%BD%9C%E4%B8%AD%E5%BF%83-lumiogames.cn%2Fstudio-5DE2C6?style=for-the-badge" alt="创作中心 lumiogames.cn/studio"></a>
+<a href="https://blog.lumio.games/?utm_source=github&utm_medium=org_readme"><img src="https://img.shields.io/badge/Blog-blog.lumio.games-FFB86B?style=for-the-badge" alt="Blog blog.lumio.games"></a>
+
 </div>
 
 <picture>
@@ -146,13 +150,12 @@
 
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/LumioGames/LumioGameEngine"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="72" align="left" alt=""></a>
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-engine.svg" width="72" align="left" alt="">
 
-### [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine) <sub>⚙️ ENGINE · SDK 组装根</sub>
+### LumioGameEngine <sub>⚙️ ENGINE · SDK 组装根</sub>
 
 引擎的组装层。Rust 写的底层内核和体素引擎，加上 C# 写的运行时，在这里打包成一个 SDK，服务器和客户端都只认这个 SDK 的接口。每次构建都会算一遍哈希，启动时再对一遍，对不上就不算跑起来。
 
-<a href="https://github.com/LumioGames/LumioGameEngine/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/LumioGameEngine?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
 <img src="https://img.shields.io/github/languages/top/LumioGames/LumioGameEngine?style=flat-square&color=1E2A3A" alt="language">
 <img src="https://img.shields.io/github/last-commit/LumioGames/LumioGameEngine?style=flat-square&color=5DE2C6&label=last%20save" alt="last save">
 
@@ -222,12 +225,12 @@ flowchart TB
 | 层 | 仓库 | 语言 | 管什么 | 不管什么 |
 | :-- | :-- | :-- | :-- | :-- |
 | **LV.4 产品** | [LumioGame](https://github.com/LumioGames/LumioGame) | C# | 玩法语义、Mapping、配置、内容、发布清单 | Native、Voxel 内部、Host 进程 |
-| **LV.3 Host** | [LumioServer](https://github.com/LumioGames/LumioServer) | Rust + C# | 专用服务器进程、网络、Session、WorldSlot、CoreCLR Hosting | Runtime 语义、玩法规则 |
-| **LV.3 Host** | [LumioClient](https://github.com/LumioGames/LumioClient) | C# | 连接、Replica、预测回滚、Unity / HybridCLR 适配、Headless Bot | Server 权威、玩法内容 |
-| **LV.2 SDK** | [LumioGameEngine](https://github.com/LumioGames/LumioGameEngine) | Rust + C# | SDK 组装、Native 聚合、ABI / Binding 生成、共享 Loader、开发启动器 | 具体玩法、Host 业务 |
-| **LV.2 Runtime** | [LumioGameRuntime](https://github.com/LumioGames/LumioGameRuntime) | C# | ECS、Tick、Coordinator、Replication、GAS、Persistence、热重载 | 进程、Socket、Voxel 内部 |
-| **LV.1 Native** | [LumioVoxelEngine](https://github.com/LumioGames/LumioVoxelEngine) | Rust | VoxelWorld、Chunk、Revision、Mutation、Streaming、Snapshot | 玩法权限、Socket、Host 生命周期 |
-| **LV.1 Native** | [LumioNativeCore](https://github.com/LumioGames/LumioNativeCore) | Rust | 通用内核、Handle、Error、Capability、内存和 Job | Voxel、ECS、网络 |
+| **LV.3 Host** | LumioServer | Rust + C# | 专用服务器进程、网络、Session、WorldSlot、CoreCLR Hosting | Runtime 语义、玩法规则 |
+| **LV.3 Host** | LumioClient | C# | 连接、Replica、预测回滚、Unity / HybridCLR 适配、Headless Bot | Server 权威、玩法内容 |
+| **LV.2 SDK** | LumioGameEngine | Rust + C# | SDK 组装、Native 聚合、ABI / Binding 生成、共享 Loader、开发启动器 | 具体玩法、Host 业务 |
+| **LV.2 Runtime** | LumioGameRuntime | C# | ECS、Tick、Coordinator、Replication、GAS、Persistence、热重载 | 进程、Socket、Voxel 内部 |
+| **LV.1 Native** | LumioVoxelEngine | Rust | VoxelWorld、Chunk、Revision、Mutation、Streaming、Snapshot | 玩法权限、Socket、Host 生命周期 |
+| **LV.1 Native** | LumioNativeCore | Rust | 通用内核、Handle、Error、Capability、内存和 Job | Voxel、ECS、网络 |
 | **配置表** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | 配表的源文件、Schema、编译器和导出工具 | 运行时逻辑 |
 
 <br>
