@@ -138,15 +138,11 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/LumioGames/LumioGame"><img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-game.svg" width="72" align="left" alt=""></a>
+<img src="https://raw.githubusercontent.com/LumioGames/.github/main/profile/assets/icon-game.svg" width="72" align="left" alt="">
 
-### [LumioGame](https://github.com/LumioGames/LumioGame) <sub>🏰 PRODUCT · 游戏本体</sub>
+### LumioGame <sub>🏰 PRODUCT · 游戏本体</sub>
 
 游戏本身。玩法、配表、内容、存档、发布，都在这一层拼成一个具体的游戏。现在跑通的第一个完整流程是放一个方块，要查权限、扣资源、改地形，同一条命令重复发不会扣两次。
-
-<a href="https://github.com/LumioGames/LumioGame/stargazers"><img src="https://img.shields.io/github/stars/LumioGames/LumioGame?style=flat-square&color=7C8CFF&label=%E2%98%85" alt="stars"></a>
-<img src="https://img.shields.io/github/languages/top/LumioGames/LumioGame?style=flat-square&color=1E2A3A" alt="language">
-<img src="https://img.shields.io/github/last-commit/LumioGames/LumioGame?style=flat-square&color=5DE2C6&label=last%20save" alt="last save">
 
 </td>
 <td width="50%" valign="top">
@@ -221,14 +217,14 @@ flowchart TB
 
 | 层 | 仓库 | 语言 | 管什么 | 不管什么 |
 | :-- | :-- | :-- | :-- | :-- |
-| **LV.4 产品** | [LumioGame](https://github.com/LumioGames/LumioGame) | C# | 玩法语义、Mapping、配置、内容、发布清单 | Native、Voxel 内部、Host 进程 |
+| **LV.4 产品** | LumioGame | C# | 玩法语义、Mapping、配置、内容、发布清单 | Native、Voxel 内部、Host 进程 |
 | **LV.3 Host** | LumioServer | Rust + C# | 专用服务器进程、网络、Session、WorldSlot、CoreCLR Hosting | Runtime 语义、玩法规则 |
 | **LV.3 Host** | LumioClient | C# | 连接、Replica、预测回滚、Unity / HybridCLR 适配、Headless Bot | Server 权威、玩法内容 |
 | **LV.2 SDK** | LumioGameEngine | Rust + C# | SDK 组装、Native 聚合、ABI / Binding 生成、共享 Loader、开发启动器 | 具体玩法、Host 业务 |
 | **LV.2 Runtime** | LumioGameRuntime | C# | ECS、Tick、Coordinator、Replication、GAS、Persistence、热重载 | 进程、Socket、Voxel 内部 |
 | **LV.1 Native** | LumioVoxelEngine | Rust | VoxelWorld、Chunk、Revision、Mutation、Streaming、Snapshot | 玩法权限、Socket、Host 生命周期 |
 | **LV.1 Native** | LumioNativeCore | Rust | 通用内核、Handle、Error、Capability、内存和 Job | Voxel、ECS、网络 |
-| **配置表** | [LumioConfig](https://github.com/LumioGames/LumioConfig) | Python | 配表的源文件、Schema、编译器和导出工具 | 运行时逻辑 |
+| **配置表** | LumioConfig | Python | 配表的源文件、Schema、编译器和导出工具 | 运行时逻辑 |
 
 <br>
 

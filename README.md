@@ -23,5 +23,5 @@ node tools/preview.mjs   # 需要 gh 已登录；产物 preview.html 不入库
 
 ## 主页里没放的两件事
 
-- **置顶仓库**在组织设置里手动选，GitHub 没有对应 API。当前建议：LumioGame、LumioGameEngine、LumioAgentSpec、workflow-plugin、LumioServer、LumioClient。
+- **置顶仓库**在组织设置里手动选，GitHub 没有对应 API。当前建议：LumioSDK、LumioTemplate、LGUI、Lumio-DevKit、LumioAgentSpec、workflow-plugin。
 - **组织简介 / 网站**在组织 Settings → Profile 里改。
